@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pivotal Search</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- styles -->
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <div id="nav">
+          <ul id="navlist">
+            <li><a href="/">Home</a></li>
+              <% if ( curr_user ) { %>
+                  <% if ( curr_user.username != 'admin' ) { %>
+                    <li><a href="/users/<%= curr_user._id%>/edit" >Edit Profile</a></li>
+
+                    <li><a href="/users/<%= curr_user._id%>/posts" >Posts</a></li>
+
+                  <% } %>
+                  <li><a href="/logout" >Logout</a></li>
+              <% } %>
+          </ul>
+
+          <div id="user">
+            <% if(curr_user) { %>
+              user: <%= curr_user.username %>
+            <% } %>
+          </div>
+
+        </div>
+
+        <% if ( messages.status ) { %>
+          <br>
+          <div id="flash">
+            <%= messages.status %>
+          </div>
+        <% } %>
+
+        <br>
+
+        <div id="nav-logo">
+
+          <a href="/"><img id="logo" src="/images/logo.svg" href="/" alt="node.js"></a>
+        </div>
+        <br>
+    </header>
+
+    <%- body %>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<h1><%= title %></h1>
+<a href="/users/<%= curr_user._id %>/posts/create">Create Post</a>
+<ul>
+    <% posts.forEach( function ( post ){ %>
+      <li>
+        <span>
+          Title: <%= post.title %>
+        </span>
+        <span>
+          <a href="/users/<%= curr_user._id %>/posts/<%= post._id %>/edit" title="Edit this post item">Edit</a>
+        </span>
+        <span>
+          <a href="/users/<%= curr_user._id %>/posts/<%= post._id %>/delete" title="Delete this post item">Delete</a>
+        </span>
+        <br>
+        <span>
+          <%= post.content %>
+        </span>
+      </li>
+    <% }); %>
+</ul>

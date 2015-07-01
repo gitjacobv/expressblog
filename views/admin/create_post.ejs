@@ -1,0 +1,20 @@
+<h1><%= title %></h1>
+
+<p>
+  <span>
+
+    <form id="create_post_form" action="/admin/posts/create" method="post" accept-charset="utf-8">
+      Title <input type="text" name="title" />
+      <br><br>
+
+      Author <input type="text" name="author" />
+      <br><br>
+
+      <textarea rows="10" cols="50" name="content"></textarea>
+      <br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </span>
+</p>

@@ -1,0 +1,31 @@
+<script src="/javascripts/checkProfile.js"></script>
+
+<h1><%= title %></h1>
+
+<p>
+  <span>
+
+    <form action="/users/<%= user.id %>/edit" method="post" onsubmit="return checkProfile(this);" accept-charset="utf-8">
+      New Password <input type="password" name="password" />
+      <br><br>
+
+      Confirm New Password <input type="password" name="confirm_password" />
+      <br><br>
+
+      Firstname <input type="text" name="firstname" value="<%= user.firstname %>" />
+      <br><br>
+
+      Middlename <input type="text" name="middlename" value="<%= user.middlename %>" />
+      <br><br>
+
+      Lastname <input type="text" name="lastname" value="<%= user.lastname %>" />
+      <br><br>
+
+      About <textarea rows="4" cols="50" name="about" ><%= user.about %></textarea>
+      <br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </span>
+</p>

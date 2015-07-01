@@ -1,0 +1,108 @@
+#nav{
+  border-radius: 12px;
+  background: #01bd2e;
+  overflow: auto;
+}
+
+#nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+#navlist {
+  float: left;
+}
+
+#navlist li
+{
+  display: inline;
+  color: #FFFFFF;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+#nav-logo {
+  border-radius: 25px;
+  background: #303030;
+  padding: 10px;
+  text-align: center;
+}
+
+#user{
+  float: right;
+  padding-top: 12px;
+  padding-right: 12px;
+  font-size: 14px;
+  color: #cccccc;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#logo {
+  width: 182px;
+  margin: 30px auto;
+}
+
+#flash {
+  background: #01bd2e;
+  border-radius: 5px;
+  padding: 5px;
+  color: #cccccc;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+#circle-title{
+  background: #818970;
+  border-radius: 50%;
+  color: #ffffff;
+  width: 125px;
+  height: 125px;
+  top: 34%;
+  left: 35%;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 125px;
+  font-size: 20px;
+}
+
+#circle-login{
+  background: #80BD01;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  top: 38%;
+  left: 38%;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+}
+
+#circle-login a{
+  position: relative;
+  top: 80%;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#form-signin{
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100px;
+}
+
+body {
+  background: #4b4b4b;
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}

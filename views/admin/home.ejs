@@ -1,0 +1,43 @@
+<div class="title">
+  <%= title %>
+</div>
+
+Welcome <%= curr_user.username  %> !
+
+<div id="links">
+  <p>
+    <span>
+      <a href="/users/create">Create New User</a>
+    </span>
+    <span>
+      <a href="/admin/users">User List</a>
+    </span>
+    <span>
+      <a href="/admin/posts">Post List</a>
+    </span>
+  </p>
+</div>
+
+<p>
+  ID: <%= curr_user._id %>
+  <br>
+
+  Username: <%= curr_user.username %>
+  <br>
+
+  Password: <%= curr_user.password %>
+  <br>
+
+  Firstname: <%= curr_user.firstname %>
+  <br>
+
+  Middlename: <%= curr_user.middlename %>
+  <br>
+
+  Lastname: <%= curr_user.lastname %>
+  <br>
+
+  About: <%= curr_user.about %>
+  <br><br>
+
+</p>

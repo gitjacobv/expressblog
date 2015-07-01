@@ -1,0 +1,25 @@
+<script src="/javascripts/checkLogin.js"></script>
+
+<div id="login">
+
+  <div id="circle-login">
+    <form id="form-signin" action="/signin" method="post" onsubmit="return checkLogin(this);" accept-charset="utf-8">
+
+      USERNAME <input type="text" name="username" />
+      <br><br>
+
+      PASSWORD <input type="password" name="password" />
+      <br><br>
+
+      <button type="submit">Submit</button>
+      <br><br>
+    </form>
+
+    <a href="/users/create">Create an account</a>
+  </div>
+
+  <div id="circle-title">
+    <%= title %>
+  </div>
+
+</div>

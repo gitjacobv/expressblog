@@ -1,0 +1,34 @@
+<script src="/javascripts/checkProfile.js"></script>
+
+<h1><%= title %></h1>
+
+<p>
+  <span>
+
+    <form id="create_user_form" action="/users/create" method="post" onsubmit="return checkProfile(this);" accept-charset="utf-8">
+      Username <input type="text" name="username" />
+      <br><br>
+
+      Password <input type="password" name="password" />
+      <br><br>
+
+      Confirm Password <input type="password" name="confirm_password" />
+      <br><br>
+
+      Firstname <input type="text" name="firstname" />
+      <br><br>
+
+      Middlename <input type="text" name="middlename" />
+      <br><br>
+
+      Lastname <input type="text" name="lastname" />
+      <br><br>
+
+      About <textarea rows="4" cols="50" name="about"></textarea>
+      <br><br>
+      <button type="submit">Submit</button>
+
+    </form>
+
+    </span>
+</p>

@@ -1,0 +1,29 @@
+<h1><%= title %></h1>
+
+<p>
+  <span>
+
+    <form action="/admin/users/<%= user.id %>/edit" method="post" accept-charset="utf-8">
+      New Password <input type="password" name="new_password" />
+      <br><br>
+
+      Confirm New Password <input type="password" name="confirm_new_password" />
+      <br><br>
+
+      Firstname <input type="text" name="new_firstname" value="<%= user.firstname %>" />
+      <br><br>
+
+      Middlename <input type="text" name="new_middlename" value="<%= user.middlename %>" />
+      <br><br>
+
+      Lastname <input type="text" name="new_lastname" value="<%= user.lastname %>" />
+      <br><br>
+
+      About <textarea rows="4" cols="50" name="new_about" ><%= user.about %></textarea>
+      <br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </span>
+</p>

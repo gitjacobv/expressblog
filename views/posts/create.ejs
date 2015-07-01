@@ -1,0 +1,17 @@
+<h1><%= title %></h1>
+
+<p>
+  <span>
+
+    <form id="create_post_form" action="/users/<%= curr_user._id %>/posts/create" method="post" accept-charset="utf-8">
+      <input type="text" name="title" />
+      <br><br>
+
+      <textarea rows="10" cols="50" name="content"></textarea>
+      <br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+  </span>
+</p>

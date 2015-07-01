@@ -1,0 +1,36 @@
+<h1><%= title %></h1>
+<% users.forEach( function ( user ){ %>
+
+  <p>
+    <span>
+      Username: <a href="/admin/users/<%=user._id%>"><%= user.username %></a>
+    </span>
+    <span>
+      <a href="/admin/users/<%= user._id %>/edit" title="Edit user">Edit</a>
+    </span>
+    <span>
+      <a href="/admin/users/<%= user._id %>/delete" title="Delete user item">Delete</a>
+    </span>
+    <br>
+
+    ID: <%= user._id %>
+    <br>
+
+    Password: <%= user.password %>
+    <br>
+
+    Firstname: <%= user.firstname %>
+    <br>
+
+    Middlename: <%= user.middlename %>
+    <br>
+
+    Lastname: <%= user.lastname %>
+    <br>
+
+    About: <%= user.about %>
+    <br><br>
+
+  </p>
+
+<% }); %>
